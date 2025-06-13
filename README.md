@@ -21,7 +21,7 @@ Keystrokes will be saved in key_log.txt.
 To stop the script, use shift+F5 in the terminal of VS code, or modify the code to support a key combination (ESC).
 
 Example output:
-h e l l o [Key.space] w o r l d [Key.enter]
+hello [Key.space] world [Key.enter]
 
-🔒 Disclaimer
+Disclaimer
 This script is meant strictly for learning purposes, such as understanding how keyboard listeners work. Always have consent before running keyloggers on any machine.
