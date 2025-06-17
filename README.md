@@ -1,5 +1,4 @@
-# PRODIGY_CS_04
-Simple Keylogger (For Educational Use)
+# Simple Keylogger
 This Python script logs keyboard input to a text file using the pynput library. It captures both regular and special keys and stores them in a file named key_log.txt.
 
 Important Notice
